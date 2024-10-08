@@ -1,0 +1,292 @@
+/* CSS DE LA PAGINA DE INICIO */
+body {
+    font-family: Arial, sans-serif; /* Define la tipografía */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Color de fondo claro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0057b8; /* Color de fondo del encabezado */
+    padding: 10px 510px; /* Espacio interno (padding) en el encabezado */
+    color: white; /* Color del texto en el encabezado */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos en el encabezado */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    height: 50px; /* Altura del encabezado */
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+      list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0056b3; /* Color de fondo azul */
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* Enlaces de navegación */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+}
+
+/* Estilos para el botón de crear cuenta */
+.create-account {
+    background-color: white; /* Color de fondo del botón */
+    color: #0057b8; /* Color del texto del botón */
+    padding: 5px 10px; /* Espacio interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    right: 20px; /* Alinea el botón a la derecha */
+    top: 10px; /* Alinea el botón en la parte superior */
+}
+
+.create-account {
+    background-color: #ff6347; /* Botón destacado */
+    color: white; /* Texto blanco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.create-account:hover {
+    transform: scale(1.05);
+    background-color: #ff4500;
+}
+
+/* Estilos para la imagen del logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100px; /* Ancho fijo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Sección de Historia de Chiquimula */
+.Chiquimula {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Chiquimula h1 {
+    font-size: 2.5em; /* Tamaño de la fuente */
+    font-family: 'Georgia', serif; /* Tipografía */
+    color: #1a3d5f; /* Color del texto */
+    text-align: center; /* Centrado */
+    
+    /* Ajusta la caja */
+    margin: 20px auto; /* Centra horizontalmente y deja espacio arriba/abajo */
+    padding: 5px 10px; /* Reduce el espacio dentro de la caja (padding) */
+    width: 60%; /* Ajusta el ancho de la caja al 60% del contenedor */
+
+    background: linear-gradient(90deg, rgba(70, 130, 180, 0.2), rgba(176, 224, 230, 0.2)); /* Fondo degradado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Sombra */
+    
+    border: 5px solid #1a3d5f; /* Borde */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Contenedor de tarjetas que agrupa las diferentes secciones dentro de la historia */
+.Chiquimula .cartaIN {
+    display: flex; /* Usa flexbox para alinear los cuadros en fila */
+    justify-content: space-around; /* Espacio entre los cuadros */
+    flex-wrap: wrap; /* Permite que los cuadros se ajusten si la pantalla es más pequeña */
+    padding: 20px; /* Espaciado interno de la sección */
+    gap: 20px; /* Espacio entre los cuadros */
+    
+}
+
+.subtitulo{
+     font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    color: #333; /* Gris oscuro para un contraste suave */
+    background: linear-gradient(90deg, rgba(173, 216, 230, 0.1), rgba(70, 130, 180, 0.1)); /* Degradado suave en tonos azul claro */
+    padding: 15px 20px; /* Añadir padding para crear más espacio alrededor del texto */
+    border-left: 5px solid #4682b4; /* Borde izquierdo azul moderado */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    margin-top: 20px; /* Añadir espacio entre el título y el párrafo */
+    text-align: justify; /* Justificar el texto para una mejor presentación */
+}
+/* Estilos para cada tarjeta individual */
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más profunda */
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta */
+.tarjeta:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    background-color: #f0f8ff; /* Cambia el fondo de la tarjeta a un color suave */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto en las imágenes al pasar el cursor */
+.tarjeta:hover img {
+    transform: scale(1.1); /* Las imágenes también crecen ligeramente al pasar el cursor */
+}
+
+/* Estilos para los títulos y subtítulos dentro de las tarjetas */
+.tarjeta h2, .tarjeta h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Centra los títulos */
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre el título */
+.tarjeta:hover h2, .tarjeta:hover h3 {
+    color: #0057b8; /* Cambia el color del título al pasar el cursor */
+}
+
+/* Estilos para el texto descriptivo dentro de las tarjetas */
+.tarjeta p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.parrafo-contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los párrafos */
+    margin-top: 30px; /* Espacio superior para separar de las tarjetas */
+}
+
+.parrafo {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f7;
+    border-radius: 8px;
+    border: 1px solid #007BFF; /* Color y grosor del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el párrafo */
+    position: relative; /* Permite trabajar con elementos internos posicionados */
+}
+
+/* Efecto dinámico al pasar el ratón sobre el párrafo */
+.parrafo:hover {
+    transform: translateY(-10px); /* Hace que el párrafo "flote" un poco */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Incrementa la sombra para dar un efecto más pronunciado */
+    background-color: #e1ecf7; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Tipos de párrafos con diferentes tamaños */
+.parrafo.grande {
+    flex-basis: 60%; /* Ocupa un 60% del ancho del contenedor */
+}
+
+.parrafo.mediano {
+    flex-basis: 35%; /* Ocupa un 35% del ancho del contenedor */
+}
+
+.parrafo.pequeno {
+    flex-basis: 30%; /* Ocupa un 30% del ancho del contenedor */
+}
+
+/* Agregar un elemento decorativo antes de los párrafos */
+.parrafo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #007BFF; /* Barra decorativa de color azul */
+    border-radius: 8px 0 0 8px; /* Bordes redondeados en la esquina izquierda */
+    transition: width 0.3s ease;
+}
+
+/* Cambio de ancho de la barra decorativa al pasar el ratón */
+.parrafo:hover::before {
+    width: 10px; /* Se expande la barra al pasar el ratón */
+}
+
+ /* Estilos del pie de página */
+.footer {
+    background-color: #1a3d5f; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espacio interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos de los íconos sociales */
+.social-icons {
+    margin-top: 10px; /* Espacio superior para los íconos sociales */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacio horizontal entre los íconos */
+    display: inline-block; /* Muestra los íconos en línea */
+}
+
+.social-icons img {
+    width: 24px; /* Tamaño de los íconos */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el reproductor de Spotify minimalista */
+.spotify-player {
+    margin-top: 20px; /* Espacio entre los íconos sociales y el reproductor */
+    display: flex;
+    justify-content: center; /* Centra el reproductor en el pie de página */
+    align-items: center;
+}
+
+/* Ajustar el tamaño del iframe */
+.spotify-player iframe {
+    border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para que resalte un poco */
+    width: 100%; /* Ajustar el ancho a su contenedor */
+    max-width: 300px; /* Limitar el ancho máximo del reproductor */
+    height: 80px; /* Altura mínima para que sea compacto */
+    border: none; /* Sin bordes */
+}
