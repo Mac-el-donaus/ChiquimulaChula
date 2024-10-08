@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://www.boomplay.com/pc/html/edit.html?version=2 -->
+<html lang="en" class="notranslate" translate="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>edit</title>
+    <meta name="author" content="TRANSSION: 罗恒星">
+    <style type="text/css">
+        html, body, div, p, ul, li, img, span{ margin:0; padding:0; border:0; outline:none; }
+        html,body{ height: 100%; cursor: text; -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none; overflow: hidden;}
+        body { padding: 10px 12px; -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box; box-sizing: border-box;
+            background: #222222; outline: none; color: #999; font-size: 14px;
+            line-height: 18px; vertical-align: middle;  border: 1px solid #333333;
+            border-radius: 4px; overflow: hidden; overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            overflow-scrolling: touch; }
+        body:focus{ border-color: #00FFFF;}
+        body.noPlaceholder { color: #fff; }
+        img { vertical-align: middle; width: auto; height: 16px; cursor: text;}
+        ::-webkit-scrollbar { width: 6px; height: 8px; background: #202123;
+            border-radius: 4px; }
+        ::-webkit-scrollbar-thumb {border: 1px solid rgba(255, 255, 255, .2);
+            background-color: rgba(0, 0, 0, .6); border-radius: 4px;}
+        ::-webkit-scrollbar-corner,
+        ::-webkit-resizer {background: #202123;}
+    </style>
+
+    <script src="./jquery-1.12.4.min.js.descarga"></script>
+    <script type="text/javascript">
+        var myEdit={};(function(){$(document).bind("dragstart",function(m){m.preventDefault();var n=m.target;if(window.getSelection){b=window.getSelection();if(b.getRangeAt&&b.rangeCount){e=b.getRangeAt(0);b.addRange(e)}if(n.nodeName.toLowerCase()==="img"&&e.collapsed){b.removeAllRanges();e.selectNode(n);e.collapse(false);b.addRange(e)}}else{c=document.selection.createRange();c.select();if(n.nodeName.toLowerCase()==="img"&&c.length===1){c=document.body.createTextRange();c.moveToElementText(n);c.collapse(false);c.select()}}top.lhx.comment.face.close()});var d,b=null,e=null,c=null,i=function(){window.document.body.focus()},a=function(m,n){i();if(!n&&k()>=top.config.constant.maxCommentContent){top.lhx.comment.createComment.tip();return}if(window.getSelection){if(e){e.deleteContents()}if(n){e.insertNode(document.createTextNode(m))}else{e.insertNode($(m)[0])}e.collapse(false)}else{if(document.selection&&document.selection.type!="Control"){c=document.selection.createRange();c.pasteHTML(m)}}j()},l=function(){i();if(window.getSelection){var m=window.getSelection().getRangeAt(0);m.deleteContents();m.collapse(false)}else{if(document.selection&&document.selection.type!="Control"){c=document.selection.createRange();c.pasteHTML("")}}},h=function(){if(!$("body").hasClass("noPlaceholder")){return""}var m=$("body").html();m=m.replace(/<img[^>]*?class="emoji"[^>]*?data-value="([^"]*?)"[^>]*?>/ig,function(o,n){return n}).replace(/<\/div>|<\/p>|^<p>/ig,"").replace(/<div>|<br>|<p>/ig,"\r\n").replace(/<[^>]*?>/ig,"").replace(/&nbsp;/g," ");return m},f=function(m){$("body").html(m)},g=function(){$("body").html($("body").attr("data-placeholder")).removeClass("noPlaceholder");top.lhx.comment.createComment.calcNum(0,window.name)},k=function(){var n=$("body");var o=n.text();var m=o.length;m=m+$("img.emoji").length;return m},j=function(){top.lhx.comment.createComment.calcNum(k(),window.name)};myEdit.insert=a;myEdit.toFocus=i;myEdit.content=h;myEdit.clearContent=g;$(document).on({focus:function(){clearTimeout(d);if($.trim($(this).html())===$("body").attr("data-placeholder")){$(this).html("").addClass("noPlaceholder")}if(!top.lhx.comment.createComment.isLogin()){$(this).blur();return false}if(window.getSelection){if(e){var o=window.getSelection();if(o.getRangeAt&&o.rangeCount){var m=o.getRangeAt(0)}if(e!==m){b.addRange(e)}}else{e=document.createRange();e.selectNodeContents($("body")[0]);e.collapse(false)}}else{var n=document.selection.createRange();if(c&&c!==n){c.select()}}},blur:function(){var m=$(this);if($.trim(m.html())===""){clearTimeout(d);d=setTimeout(function(){g()},200)}if(window.getSelection){b=window.getSelection();if(b.getRangeAt&&b.rangeCount){e=b.getRangeAt(0)}}},mousedown:function(m){if(window.getSelection){b=window.getSelection();if(b.getRangeAt&&b.rangeCount){e=b.getRangeAt(0);e.collapse(false);b.addRange(e)}}else{c=document.selection.createRange();c.collapse(false);c.select()}},mouseup:function(m){var n=m.target;if(window.getSelection){b=window.getSelection();if(b.getRangeAt&&b.rangeCount){e=b.getRangeAt(0);b.addRange(e)}if(n.nodeName.toLowerCase()==="img"&&e.collapsed){b.removeAllRanges();e.selectNode(n);e.collapse(false);b.addRange(e)}}else{c=document.selection.createRange();c.select();if(n.nodeName.toLowerCase()==="img"&&c.length===1){c=document.body.createTextRange();c.moveToElementText(n);c.collapse(false);c.select()}}top.lhx.comment.face.close()},click:function(m){var n=m.target;if(window.getSelection){if(n.nodeName.toLowerCase()==="img"){b.removeAllRanges();e.selectNode(n);e.collapse(false);b.addRange(e)}}top.lhx.comment.face.close()},textInput:function(m){a("",true);if(k()>=top.config.constant.maxCommentContent){m.preventDefault();top.lhx.comment.createComment.tip()}},input:function(){j()},keyup:function(n){var m=n.target;if(!window.getSelection){c=document.selection.createRange();c.select()}top.lhx.comment.face.close();j()},touchstart:function(m){top.lhx.comment.face.close()},paste:function(o){if(window.getSelection){b=window.getSelection();if(b.getRangeAt&&b.rangeCount){e=b.getRangeAt(0);b.addRange(e)}}else{c=document.selection.createRange();c.select()}a("",true);var p="";if(o.originalEvent.clipboardData){o.preventDefault();p=o.originalEvent.clipboardData.getData("text")}else{if(window.clipboardData){o.preventDefault();p=window.clipboardData.getData("text")}}console.log(p);var n=k();var m=top.config.constant.maxCommentContent-n;if(m<p.length){top.lhx.comment.createComment.tip()}a(p.substring(0,m),true)}},"body");$(document).ready(function(){try{document.designMode="off";document.execCommand("enableObjectResizing",false,"false")}catch(m){}})}());
+    </script>
+</head>
+
+<body data-placeholder="Please share your thoughts…" contenteditable="true">Please share your thoughts…
+</body></html>

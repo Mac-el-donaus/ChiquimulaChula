@@ -1,0 +1,273 @@
+/* CSS DE LA PAGINA DE INICIO */
+body {
+    font-family: Arial, sans-serif; /* Define la tipografía */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Color de fondo claro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0057b8; /* Color de fondo del encabezado */
+    padding: 10px 510px; /* Espacio interno (padding) en el encabezado */
+    color: white; /* Color del texto en el encabezado */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos en el encabezado */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    height: 50px; /* Altura del encabezado */
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+      list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0056b3; /* Color de fondo azul */
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* Enlaces de navegación */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+}
+
+/* Estilos para el botón de crear cuenta */
+.create-account {
+    background-color: white; /* Color de fondo del botón */
+    color: #0057b8; /* Color del texto del botón */
+    padding: 5px 10px; /* Espacio interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    right: 20px; /* Alinea el botón a la derecha */
+    top: 10px; /* Alinea el botón en la parte superior */
+}
+
+.create-account {
+    background-color: #ff6347; /* Botón destacado */
+    color: white; /* Texto blanco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.create-account:hover {
+    transform: scale(1.05);
+    background-color: #ff4500;
+}
+
+/* Estilos para la imagen del logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100px; /* Ancho fijo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para la sección de Costumbres */
+.Costumbres {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Costumbres h1 {
+    font-size: 2.5em; /* Tamaño de la fuente */
+    font-family: 'Georgia', serif; /* Tipografía */
+    color: #1a3d5f; /* Color del texto */
+    text-align: center; /* Centrado */
+    
+    /* Ajusta la caja */
+    margin: 20px auto; /* Centra horizontalmente y deja espacio arriba/abajo */
+    padding: 5px 10px; /* Reduce el espacio dentro de la caja (padding) */
+    width: 60%; /* Ajusta el ancho de la caja al 60% del contenedor */
+
+    background: linear-gradient(90deg, rgba(70, 130, 180, 0.2), rgba(176, 224, 230, 0.2)); /* Fondo degradado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Sombra */
+    
+    border: 5px solid #1a3d5f; /* Borde */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Contenedor de tarjetas con estilo creativo */
+.Costumbres .cartaIN {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    perspective: 1000px; /* Añade profundidad para el efecto 3D */
+}
+
+/* Tarjetas de costumbres con posicionamiento creativo */
+.Costumbres .tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(-2deg); /* Rotación inicial */
+}
+
+/* Efecto al pasar el cursor sobre las tarjetas */
+.Costumbres .tarjeta:hover {
+    transform: rotate(0deg) scale(1.08); /* Rota a su posición normal y crece */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos en las imágenes dentro de las tarjetas */
+.Costumbres .tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.Costumbres .tarjeta:hover img {
+    transform: scale(1.1); /* Crece al pasar el cursor */
+}
+
+/* Títulos dentro de las tarjetas */
+.Costumbres .tarjeta h2 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.Costumbres .tarjeta:hover h2 {
+    color: #0057b8; /* Cambia el color del título al pasar el cursor */
+}
+
+/* Texto descriptivo en las tarjetas */
+.Costumbres .tarjeta p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.parrafo-contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los párrafos */
+    margin-top: 30px; /* Espacio superior para separar de las tarjetas */
+}
+
+.parrafo {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f7;
+    border-radius: 8px;
+    border: 1px solid #007BFF; /* Color y grosor del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el párrafo */
+    position: relative; /* Permite trabajar con elementos internos posicionados */
+}
+
+/* Efecto dinámico al pasar el ratón sobre el párrafo */
+.parrafo:hover {
+    transform: translateY(-10px); /* Hace que el párrafo "flote" un poco */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Incrementa la sombra para dar un efecto más pronunciado */
+    background-color: #e1ecf7; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Tipos de párrafos con diferentes tamaños */
+.parrafo.grande {
+    flex-basis: 60%; /* Ocupa un 60% del ancho del contenedor */
+}
+
+.parrafo.mediano {
+    flex-basis: 35%; /* Ocupa un 35% del ancho del contenedor */
+}
+
+.parrafo.pequeno {
+    flex-basis: 30%; /* Ocupa un 30% del ancho del contenedor */
+}
+
+/* Agregar un elemento decorativo antes de los párrafos */
+.parrafo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #007BFF; /* Barra decorativa de color azul */
+    border-radius: 8px 0 0 8px; /* Bordes redondeados en la esquina izquierda */
+    transition: width 0.3s ease;
+}
+
+/* Cambio de ancho de la barra decorativa al pasar el ratón */
+.parrafo:hover::before {
+    width: 10px; /* Se expande la barra al pasar el ratón */
+}
+
+
+/* Estilo del subtítulo para hacerlo más llamativo y acorde a la página */
+.subtitulo {
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    color: #333; /* Gris oscuro para un contraste suave */
+    background: linear-gradient(90deg, rgba(173, 216, 230, 0.1), rgba(70, 130, 180, 0.1)); /* Degradado suave en tonos azul claro */
+    padding: 15px 20px; /* Añadir padding para crear más espacio alrededor del texto */
+    border-left: 5px solid #4682b4; /* Borde izquierdo azul moderado */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    margin-top: 20px; /* Añadir espacio entre el título y el párrafo */
+    text-align: justify; /* Justificar el texto para una mejor presentación */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #1a3d5f; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espacio interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo */
+}
+
+.social-icons {
+    margin: 10px 0; /* Espaciado entre el texto y los iconos */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacio entre iconos */
+}
+
+.social-icons img {
+    width: 24px; /* Ancho de los iconos */
+    height: 24px; /* Alto de los iconos */
+}
